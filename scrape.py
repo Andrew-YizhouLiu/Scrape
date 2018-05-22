@@ -5,7 +5,7 @@ Created on Wed May  2 16:21:54 2018
 @author: Andre
 """
 
-'web scrape with picture'
+'web scrape with picture and Yelp'
 __author__ = 'Andrew Liu'
 
 #%%
@@ -62,6 +62,7 @@ soup = BeautifulSoup(item.content,'lxml')
 #%%
 restaurants = soup.find_all('a', class_= 'biz-name js-analytics-click')
 print(restaurants)
+
 
 #%%
 from selenium import webdriver
